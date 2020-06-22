@@ -283,7 +283,7 @@ homedir: "~/iotedge"
 ###############################################################################
 
 moby_runtime:
-  uri: "http://172.17.0.1"
+  uri: "unix:///var/run/docker.sock"
   # network: "azure-iot-edge"
   #
   # network:
