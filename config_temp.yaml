@@ -172,7 +172,7 @@ agent:
 # 'GatewayHostName' field of the device's connection string URI.
 ###############################################################################
 
-hostname: "VeeaIoTHub.azure-devices.net"
+hostname: "harialpine"
 
 ###############################################################################
 # Watchdog settings
