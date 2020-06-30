@@ -63,7 +63,7 @@
 #     method: "tpm"
 #     registration_id: "<REGISTRATION_ID>"
 
- DPS symmetric key provisioning configuration
+# DPS symmetric key provisioning configuration
  provisioning:
    source: "dps"
    global_endpoint: "https://global.azure-devices-provisioning.net"
