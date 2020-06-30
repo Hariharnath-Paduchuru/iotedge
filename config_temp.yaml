@@ -50,9 +50,9 @@
 ###############################################################################
 
 # Manual provisioning configuration
-provisioning:
-  source: "manual"
-  device_connection_string: "HostName=VeeaIoTHub.azure-devices.net;DeviceId=VeeaIoTEdge;SharedAccessKey=1k/tS0aH27NJEBjhjp+6xf1SYtzvFtBhgDYYskOrkTg="
+#provisioning:
+# source: "manual"
+# device_connection_string: "HostName=IoTHubHari.azure-devices.net;DeviceId=EdgeDeviceHari;SharedAccessKey=grz5mzkMy1FJ4vkdeCWaF0RTkIgwnkw86+syJQ9n1lw="
 
 # DPS TPM provisioning configuration
 # provisioning:
@@ -63,15 +63,15 @@ provisioning:
 #     method: "tpm"
 #     registration_id: "<REGISTRATION_ID>"
 
-# DPS symmetric key provisioning configuration
-# provisioning:
-#   source: "dps"
-#   global_endpoint: "https://global.azure-devices-provisioning.net"
-#   scope_id: "<SCOPE_ID>"
-#   attestation:
-#     method: "symmetric_key"
-#     registration_id: "<REGISTRATION_ID>"
-#     symmetric_key: "<SYMMETRIC_KEY>"
+ DPS symmetric key provisioning configuration
+ provisioning:
+   source: "dps"
+   global_endpoint: "https://global.azure-devices-provisioning.net"
+   scope_id: "0ne0012D631"
+   attestation:
+     method: "symmetric_key"
+     registration_id: "1hsmzl7bwyg"
+     symmetric_key: "XITBy5mshKDGGcjnsBzfRvi8StdYh1QQ4yhK4Zorgzw="
 
 # DPS X.509 provisioning configuration
 # provisioning:
@@ -155,7 +155,7 @@ agent:
   type: "docker"
   env: {}
   config:
-    image: "mcr.microsoft.com/azureiotedge-agent:1.0"
+    image: "mcr.microsoft.com/azureiotedge-agent:1.0.9.3"
     auth: {}
 
 ###############################################################################
